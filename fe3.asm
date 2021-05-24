@@ -6,8 +6,7 @@ else
     !hook = $83B81C
 endif
 
-; 1.1 = 83B831
-ORG $83B81C
+ORG !hook
     jsl $DACB10     ; this is the hook to the new routine
 
 ORG $DACB10
